@@ -14,5 +14,7 @@ class BaseEnvironment(ABC):
         """Reset the environment and return the initial observation."""
 
     @abstractmethod
-    def step(self, action: Any) -> tuple[Any, float, bool, dict[str, Any]]:
+    def step(
+        self, action: Any
+    ) -> tuple[Any, float, bool, bool, dict[str, Any]]:
         """Advance the environment by one step."""

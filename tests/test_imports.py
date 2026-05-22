@@ -1,6 +1,5 @@
 """Smoke tests for the ReFly package."""
 
-import re
 import unittest
 
 from refly import __version__

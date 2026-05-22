@@ -17,8 +17,10 @@ class BaseAgent(ABC):
     def act(self, observation: Any) -> Any:
         """Return an action for the given observation."""
 
+    @abstractmethod
     def save(self, path: str) -> None:
         """Persist the agent state."""
 
+    @abstractmethod
     def load(self, path: str) -> None:
         """Restore the agent state."""
